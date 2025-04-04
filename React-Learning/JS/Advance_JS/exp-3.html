@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Concept</title>
+</head>
+<body>
+    <script>
+        var bt = document.getElementById("btn");
+        
+        bt.addEventListener("click", () => {
+            alert("Button Clicked");
+        })
+
+        bt.addEventListener("mouseenter", ()=>{
+            document.getElementById("sp").innerHTML="Button is touched";
+        })
+
+        bt.addEventListener("mouseout", ()=>{
+            document.getElementById("sp").innerHTML="Button is untouched";
+        })
+    </script>
+    <input type="button" id="btn" value="Click"><br><br>
+    <span id="sp" style="color: blue;"></span>
+</body>
+</html>

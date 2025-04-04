@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multivalue Form</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            let lang=document.test.lang.value;
+            let res="";
+            let c=0;
+            for(let i=0;i<lang;i++){
+                if(document.test.lang[i].checked==true){
+                    c++;
+                    res+=document.test.lang[i].value+" ";
+                }
+            }
+            if(c==0){
+                alert("Please select at least one language.");
+                return false;
+            }
+            else{
+                alert("You have selected "+c+" languages: "+res);
+                return true;
+            }
+        }
+    </script>
+
+    <form action="" name="test" onsubmit="return validate()">
+        <label for="#">Select Language:</label>
+        <input type="checkbox" name="lang" value="html">HTML
+        <input type="checkbox" name="lang" value="css">CSS
+        <input type="checkbox" name="lang" value="js">JS
+        <input type="checkbox" name="lang" value="react">React
+        <input type="checkbox" name="lang" value="node">Node
+        <input type="checkbox" name="lang" value="mongo">MongoDB
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

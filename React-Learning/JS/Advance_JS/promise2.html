@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var checkNumber =async () => {
+            let num = document.getElementById("number").value; // async function is used to handle asynchronous operations 
+
+            try{
+                let n = new Promise((resolve, reject) => {
+                    if(num % 2 == 0){
+                        resolve("Even Number");
+                    }
+                    else{
+                        reject("Odd Number");
+                    }
+                });
+
+                document.getElementById("h3").innerHTML = await n; // await is used to wait for the promise to be resolved or rejected.
+
+                // The await keyword can only be used inside an async function. otherwise it will throw an error.
+            }
+
+            catch(error){
+                document.write(error);
+            }
+        }
+    </script>
+
+<label for="number">Enter a number:</label>
+<input type="number" name="number" id="number">
+
+<button type="button" onclick="checkNumber()">Check Number</button>
+<h3 id="h3"></h3>
+</body>
+</html>

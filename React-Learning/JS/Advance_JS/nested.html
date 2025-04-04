@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Function</title>
+</head>
+<body>
+    <script>
+        function outer(msg, x, y){
+            document.write(`<h3>${msg}</h3>`);
+            function inner(){
+                document.write(`<h3>Sum of: ${x+y}</h3>`);
+            }
+
+            inner();
+        }
+
+        outer("Hello", 10, 20);
+    </script>
+</body>
+</html>

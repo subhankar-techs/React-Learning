@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting Concept</title>
+</head>
+<body>
+   <script>
+    x=10;
+    document.writeln(`Value of x is ${x} <br>`);
+    var x; //hoisting does not work with let and const
+    disp();
+    function disp(){
+        document.writeln(`Value of x is ${x} <br>`);
+    }   
+   </script> 
+</body>
+</html>

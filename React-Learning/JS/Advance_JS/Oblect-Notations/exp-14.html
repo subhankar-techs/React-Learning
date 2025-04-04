@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling Concept </title>
+</head>
+<body>
+    <script>
+        //Exception Handling Concept
+        //try, catch, finally, throw
+        //try block is used to test a block of code for errors.
+        //catch block is used to handle the error.
+        //finally block is used to execute code after try and catch blocks, regardless of the result.
+        //throw statement is used to create a custom error.
+        var checkAge = function() {
+            let a = document.getElementById("age").value;
+            try {
+                if (a <= 0) {
+                    throw "Age cannot be negative";
+                } 
+                else {
+                    document.getElementById("h3").innerHTML = "Your age is valid";
+                }
+            } 
+            catch (error) {
+                document.getElementById("h3").innerHTML = "Error: " + error;
+            } 
+            finally {
+                alert("This is final output.");
+            }
+        }
+    </script>
+
+    <label for="age" >Enter your age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter Age"><br><br>
+
+    <button type="button" onclick="checkAge()">Check Age</button>
+
+    <h3 id="h3"></h3>
+</body>
+</html>

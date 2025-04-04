@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multivalue Form</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            let l=document.test.job.options.length;
+            let res="";
+            for(let i=0;i<l;i++){
+                if(document.test.job.options[i].selected==true){
+                    res+=document.test.job.options[i].text+" ";
+                    c++;
+                }
+            }
+            if(c==0){
+                alert("Please select at least one job role.");
+                return false;
+            }
+            else{
+                alert("You have selected "+res+" job roles: "+res);
+                return true;
+            }
+        }
+    </script>
+
+    <form action="" name="test" onsubmit="return validate()">
+        <label for="test">Select Job role</label>
+        <select name="job" id="" onsubmit="return validate()">
+            <option value="service">Service</option>
+            <option value="faculty">Faculty</option>
+            <option value="bank">Bank</option>
+            <option value="sales">Sales</option>
+            <option value="admin">Admin</option>
+        </select><br><br>
+        <input type="submit" value="CHECK"/>
+    </form>
+</body>
+</html>

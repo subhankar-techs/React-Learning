@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total number of words & words start with vowels</title>
+</head>
+<body>
+
+    <script>
+        function myFunction() {
+            var sentence = document.getElementById("sentence").value;
+            
+            document.getElementById("h3").innerText = `Total number of words: ${sentence.split(" ").length}`;
+
+            var vowels = "aeiouAEIOU";
+            var vowelCount = 0;
+            for (var i = 0; i < sentence.length; i++) {
+                if (vowels.indexOf(sentence[i]) !== -1) {
+                    vowelCount++;
+                }
+            }
+
+            // document.write("Number of words starting with a vowel: " + vowelCount);
+            document.getElementById("h4").innerText = `Number of words starting with a vowel: ${vowelCount}`;
+        }
+    </script>
+    Enter a sentence:<br>
+    <input type="text" id="sentence" name="sentence"><br><br>
+    <button onclick="myFunction()">Result</button><br><br>
+
+    <h3 id="h3"></h3>
+    <h3 id="h4"></h3>
+</body>
+</html>

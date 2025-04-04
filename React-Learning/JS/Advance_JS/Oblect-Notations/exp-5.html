@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var std=[
+            {sid: 1, sname:"Rahul", phy: 80, chem: 90, math: 85, dept: "CSE"},
+            {sid: 2, sname:"Raj", phy: 85, chem: 95, math: 90, dept: "ECE"},
+            {sid: 3, sname:"Ravi", phy: 90, chem: 85, math: 80, dept: "ME"},
+            {sid: 4, sname:"Sam", phy: 80, chem: 90, math: 85, dept: "CSE"},
+        ]
+        var res="<table border='1'>";
+            res+="<tr>";
+            std.forEach((val,index)=>{
+                var totalMarks = val.phy + val.chem + val.math;
+                res+="<tr>";
+                res+="<td>"+val.sid+"</td>";
+                res+="<td>"+val.sname+"</td>";
+                res+="<td>"+totalMarks+"</td>";
+                res+="<td>"+val.dept+"</td>";
+                res+="</tr>";
+            })
+            res=res+"</table>";
+            document.getElementById("d1").innerHTML=res;
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <script>
+        var n1=window.prompt("Enter First Number:");
+        var n2=window.prompt("Enter Second Number:");
+        var ch=window.prompt("1:ADD 2: SUB 3:MUL 4:DIV Enter Your Choice:");
+        var result;
+        switch(ch){
+            case "1" : result=number(n1)+number(n2);
+            console.log(result);
+            break;
+
+            case "2" : result=(n1)-(n2);
+            console.log(result);
+            break;
+
+            case "3" : result=(n1)*(n2);
+            console.log(result);
+            break;
+
+            case "4" : result=(n1)/(n2);
+            console.log(result);
+            break;
+
+            default : console.log("Invalid Choice");
+        }
+    </script>
+</body>
+</html>

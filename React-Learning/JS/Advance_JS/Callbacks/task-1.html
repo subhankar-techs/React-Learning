@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="sentence">Enter Sentence:</label>
+    <input type="text" id="sentence"><br><br>
+
+    <button onclick="check()">Check</button><br><br>
+
+    <h4>Word Frequency:</h4>
+    <div id="frequency"></div>
+
+    <h4>Max Non-Vowel Word:</h4>
+    <div id="maxNonVowel"></div>
+
+    <script>
+        function check() {
+            const sentence = document.getElementById("sentence").value;
+            const words = sentence.toLowerCase().split(" ");
+
+            const frequency = {};
+            words.forEach(word => {
+                frequency[word] = (frequency[word] || 0) + 1;
+            });
+
+            let freq = "";
+            for (const word in frequency) {
+                freq += `${word} -- ${frequency[word]}<br>`;
+            }
+            document.getElementById("frequency").innerHTML = freq;
+
+            let maxNonVowelWord = "";
+            let maxNonVowelCount = 0;
+
+            words.forEach(word => {
+                let nonVowelCount = 0;
+                for (let char of word) {
+                    if (!"aeiou".includes(char)) {
+                        nonVowelCount++;
+                    }
+                }
+                if (nonVowelCount > maxNonVowelCount) {
+                    maxNonVowelCount = nonVowelCount;
+                    maxNonVowelWord = word;
+                }
+            });
+
+            document.getElementById("maxNonVowel").innerHTML = `${maxNonVowelWord}`;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var obj = {
+        //     x: 10,
+        //     y: 20,
+        // }
+
+        // function getSum(z) {
+        //     return this.x + this.y + z;
+        // }
+
+        // var result = getSum.call(obj, 30); // Using call method to set the value of 'this' to obj
+        // document.write(`The sum is: ${result} <br>`); // Output: The sum is: 60
+
+        // var result1 = getSum.apply(obj, [40]); // Using apply method to set the value of 'this' to obj
+        // document.write(`The sum is: ${result1} <br>`); // Output: The sum is: 60
+
+        // var result2 = getSum.bind(obj, 50); // Using bind method to set the value of 'this' to obj
+        // document.write(`The sum is: ${result2()} <br>`); // Output: The sum is: 60
+
+        var test = {
+            principle: 1000,
+            rate: 5,
+            time: 2,
+        }
+
+        function interest(time) {
+            return this.principle * this.rate * time / 100;
+        }
+
+        var result = interest.call(test, test.time); 
+        
+        var amount = test.principle + result;
+        
+        document.write(`Time: ${test.time} years <br>`); 
+        document.write(`Simple Interest: ${result} <br>`);
+        document.write(`Principle: ${test.principle} <br>`); 
+        document.write(`Amount: ${amount} <br>`);
+    </script>
+</body>
+</html>

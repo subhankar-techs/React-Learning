@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Even Factors</title>
+</head>
+<body>
+    <script>
+        let num=window.prompt("Enter a number:")
+        function findEvenFactors() {
+            for (let i = 1; i <= num; i++) {
+                if (num % i === 0 && i % 2 === 0) {
+                    evenFactors.push(i);
+                }
+            }
+            return evenFactors;
+    }
+    console.log(num);
+    </script>
+</body>
+</html>

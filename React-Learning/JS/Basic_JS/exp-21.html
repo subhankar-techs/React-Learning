@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Concept</title>
+</head>
+<body>
+    <script>
+        function validate(){
+            var age=/^[0-9]{1,2}$/;
+            if(age.test(document.getElementById("age").value)){
+                alert("Valid Age");
+                return true;
+            }
+            else{
+                alert("Invalid Age");
+                return false;
+            }
+        }
+    </script>
+    <form action="" onsubmit="return validate()">
+        <input type="text" id="age" name="age" placeholder="Enter Age" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

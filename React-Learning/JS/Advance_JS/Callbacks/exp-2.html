@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table creation using callbacks</title>
+</head>
+<body>
+    <div id="d4"></div>
+    <script>
+        var city=["Delhi","Mumbai","Chennai","Kolkata","Hyderabad"];
+        var res=`<table border="2">
+            <tr>
+                <th>City ID</th>
+                <th>City</th>
+            </tr>`;
+        var temp=city.map((val,index)=>{
+            return `
+            <tr>
+                <td>${index+1}</td>
+                <td>${val}</td>
+            </tr>`;
+        })
+        res=res+temp.join(" ")+"</table>";
+        document.getElementById("d4").innerHTML=res;
+    </script>
+</body>
+</html>

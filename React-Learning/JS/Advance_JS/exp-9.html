@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find max-min length & vowels of a string</title>
+</head>
+<body>
+
+    <script>
+        function result() {
+            let sentence = document.getElementById("sentence").value;
+            let max = 0;
+            let min = sentence.length;
+            let vowelCount = 0;
+            let currentWord = "";
+            let totalVowelCount = 0;
+
+            for (let i = 0; i < sentence.length; i++) {
+                if (sentence[i] == " ") {
+                    if (currentWord.length > max) {
+                        max = currentWord.length;
+                    }
+                    if (currentWord.length < min) {
+                        min = currentWord.length;
+                    }
+                    totalVowelCount += vowelCount;
+                    currentWord = "";
+                    vowelCount = 0;
+                } else {
+                    currentWord += sentence[i];
+                    if (sentence[i].toLowerCase() == "a" || sentence[i].toLowerCase() == "e" || sentence[i].toLowerCase() == "i" || sentence[i].toLowerCase() == "o" || sentence[i].toLowerCase() == "u") {
+                        vowelCount++;
+                    }
+                }
+            }
+
+            if (currentWord.length > max) {
+                max = currentWord.length;
+            }
+            if (currentWord.length < min) {
+                min = currentWord.length;
+            }
+            totalVowelCount += vowelCount;
+
+            document.getElementById("h3").innerText = `Maximum length of a word: ${max}`;
+            document.getElementById("h4").innerText = `Minimum length:  ${min}`;
+            document.getElementById("h5").innerText = `Number of vowels: ${totalVowelCount}`;
+        }
+    </script>
+
+    <label for="sentence">Enter a sentence:</label>
+    <input type="text" id="sentence">
+    <button type="button" onclick="result()">Result</button>
+    <h3 id="h3"></h3>
+    <h3 id="h4"></h3>
+    <h3 id="h5"></h3>
+</body>
+</html>

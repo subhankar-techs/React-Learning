@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onfocus & on blur event</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            document.getElementById("sp1").innerHTML="Enter your name";
+        }
+
+        function b1(){
+            document.getElementById("sp1").innerHTML="";
+        }
+        function f2(){
+            document.getElementById("sp2").innerHTML="Enter your DOB";
+        }
+
+        function b2(){
+            document.getElementById("sp2").innerHTML="";
+        } 
+    </script>
+
+    <input type="text" id="txt1" onfocus="f1()" onblur="f2()">
+    <span id="sp1" style="color: red;"></span>
+
+    <input type="date" id="txt2" onfocus="b1()" onblur="b2()">
+    <span id="sp2" style="color: rgb(13, 255, 0);"></span>
+</body>
+</html>

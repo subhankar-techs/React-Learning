@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json Concept</title>
+</head>
+<body>
+    <script>
+        var test1 = '{"name": "John", "age": 30, "city": "New York"}';
+
+        var result = JSON.parse(test1); // parse the JSON string into a JavaScript object
+        console.log(result);
+        console.log(test1); // print the original JSON string
+
+        var test2 = {
+            name: "Subhankar",
+            age: 30,
+            city: "New York"
+        };
+        console.log(test2); // print the JavaScript object
+        console.log(JSON.stringify(test2)); // convert the JavaScript object into a JSON string
+    </script>
+</body>
+</html>

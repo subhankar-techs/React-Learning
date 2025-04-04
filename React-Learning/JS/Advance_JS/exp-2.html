@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Vowels Count</title>
+</head>
+<body>
+    <script>
+        const myFunction = () => {
+            let str = document.getElementById("txt").value;
+            let count = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u" || str[i] == "A" || str[i] == "E" || str[i] == "I" || str[i] == "O" || str[i] == "U") {
+                    count++;
+                }
+            }
+            document.write("Total Vowels: " + count);
+        }
+    </script>
+    Enter String:
+    <input type="text" id="txt"><br><br>
+    <button onclick="myFunction()">Count</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["orange", "lemon", "apple", "mango", "banana", "welcome"];
+        var vowels=["a","e","i","o","u"];
+        
+        var result=arr.filter((val,index)=>{
+            let count=0;
+            val.split('').forEach((k, index) => {
+                if(vowels.includes(k)){
+                    count++;
+                }
+            })
+            if (count>2){
+                return true;
+            }
+        })
+        console.log(result);
+
+        
+    </script>
+</body>
+</html>

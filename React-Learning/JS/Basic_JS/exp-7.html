@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+</head>
+<body>
+    <script>
+        // var num = window.prompt("Enter a number");
+        // function isPrime(n) {
+        //     if (n <= 1) {
+        //         return false;
+        //     }
+        //     for (var i = 2; i <= Math.sqrt(n); i++) {
+        //         if (n % i === 0) {
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
+        // if (isPrime(num)) {
+        //     alert(num + " is a prime number.");
+        // } else {
+        //     alert(num + " is not a prime number.");
+        // }
+
+
+        function isPrime(){
+            let val= window.prompt("Enter a number:");
+            let flag=1;
+            for(let i=2;i<val;i++){
+                if(val%i==0){
+                    flag=0;
+                    break;
+                }
+            }
+            (flag==1)?alert("Number is prime"):alert("Number is not prime")
+        }
+    </script>
+    <button onclick="isPrime">Check</button>
+</body>
+</html>

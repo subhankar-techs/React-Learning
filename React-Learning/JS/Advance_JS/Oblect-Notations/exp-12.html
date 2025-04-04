@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread operator in object notation
+        
+        var test = {id: 20, name: "Subhankar", location: "panskura"};
+
+        var duplicate = {...test, email: "subhankar.techs@gmail.com", dept: "IT"}; // spread operator is used to copy the object and add new properties
+        
+        var test1 = {gender: "male", lang: ["Hindi", "English"]};
+        var test2 = {marks: 80, grade: "A+"};
+        var result = {...test,...test1, ...test2, active: true}; // spread operator is used to merge two objects
+        console.log(result); // {id: 20, name: "Subhankar", location: "panskura
+    </script>
+</body>
+</html>

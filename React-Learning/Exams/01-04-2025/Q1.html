@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Check</title>
+</head>
+<body>
+    <label for="dept_name"> Department Name:</label>
+    <input type="text" id="dept_name" placeholder="Enter department name">
+    <label for="location"> Enter Location:</label>
+    <input type="text" id="location" placeholder="Enter location">
+    <button onclick="check()">Check</button>
+    <h3 id="result"></h3>
+
+    <script>
+        var students =[
+            {sid: 1 ,name:"Subhankar", maths:56, physics:78, chemistry:90, dept_name:"MCA", location:"Kolkata"},
+            {sid: 2 ,name:"Sourav", maths:50, physics:74, chemistry:20, dept_name:"CSE", location:"Kolkata"},
+            {sid: 3 ,name:"Souvik", maths:60, physics:52, chemistry:65, dept_name:"CSE", location:"Kolkata"},
+        ]
+
+        function check(){
+            var dept_name = document.getElementById("dept_name").value;
+            var location = document.getElementById("location").value;
+            var result = document.getElementById("result");
+            var found = false;
+            var output = "";
+            for(var i=0;i<students.length;i++){
+                if(students[i].dept_name.toLowerCase() === dept_name.toLowerCase() && students[i].location.toLowerCase() === location.toLowerCase()){
+                    found = true;
+                    output += "Student ID: " + students[i].sid + ", Name: " + students[i].name + ", Total Marks: " + (students[i].maths + students[i].physics + students[i].chemistry) + "<br>";
+                }
+            }
+            if(found){
+                result.innerHTML = output;
+            } else {
+                result.innerHTML = "No student found with the given department name and location.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining Concept</title>
+</head>
+<body>
+    <script>
+        var info={
+            emp1:{
+                id: 20, name: "Subhankar"},
+            emp2:{
+                location: "Panskura"},
+            emp4:{
+                gender: "male", dept: "IT"},
+        }
+
+        document.write(info?.emp1?.name + "<br>" + info?.emp1?.gen + "<br>");
+
+        document.write(info?.emp2?.location + "<br>" + info?.emp2?.gen + "<br>");
+
+        document.write(info?.emp3?.dept + "<br>" + info?.emp3?.gen + "<br>");
+
+        document.write(info?.emp4?.gender + "<br>" + info?.emp4?.gen + "<br>");
+
+        document.write("This is the end of the program<br>");
+    </script>
+</body>
+</html>

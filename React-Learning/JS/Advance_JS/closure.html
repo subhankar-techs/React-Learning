@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // a closure is a function that has access to its outer function scope even after the outer function has returned.
+
+        // 
+
+        function outerFunction() {
+            let outerVariable = 'I am an outer variable';
+
+            function innerFunction() {
+                console.log(outerVariable); // Accessing outerVariable from the inner function
+
+                return x=y;
+            }
+
+            const test = outerFunction(10); // calling innerFunction() here
+
+            var res = innerFunction(20); // call the closure function
+            document.write(res); // print the result
+        }
+    </script>
+</body>
+</html>

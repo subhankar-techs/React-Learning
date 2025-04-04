@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area and Volume of a Rectangle </title>
+</head>
+<body>
+    <script>
+        var calc={
+            len:20,
+            bre:10,
+            hei:15,
+            area:function(){
+                return this.len*this.bre;
+            },
+            volume:function(){
+                return this.len*this.bre*this.hei;
+            },
+            display:function(msg){
+                document.write(`<h3>${msg}</h3>`);
+            }
+        }
+        document.write(`<h3>Area: ${calc.area()}</h3> <h3>Volume: ${calc.volume()}</h3>`);
+        calc.display("Area and Volume of a Rectangle");
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Test With Table</title>
+    <style>
+        #th:hover{
+            background-color: greenyellow;
+            font-size: 30px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 5px;
+            text-align: center;
+            border-bottom: 3px dotted ;
+        }
+
+        tr:nth-child(even){
+            background-color: green;
+            color: black;
+        }
+        tr:nth-child(odd){
+            background-color: red;
+            color: white;
+        }
+
+        tr:nth-child(even):hover{
+            background-color: white;
+        }
+
+        tr:nth-child(odd):hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome to Hover Test</h3>
+    <table border="2" cellpadding="2">
+        <tr id="th">
+            <th>id</th>
+            <th>name</th>
+            <th>loc</th>
+            <th>dept</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Subhankar</td>
+            <td>Panskura</td>
+            <td>MCA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Moni</td>
+            <td>Panskura</td>
+            <td>MCA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Gurguri</td>
+            <td>Hedlapur</td>
+            <td>MCA</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Soumen</td>
+            <td>Keshpur</td>
+            <td>MCA</td>
+        </tr>
+    </table>
+</body>
+</html>

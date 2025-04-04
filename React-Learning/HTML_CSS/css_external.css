@@ -1,0 +1,23 @@
+h2{
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: solid;
+    text-align: center;
+}
+
+#p1{
+    background-color: white; 
+    color: blue;
+}
+
+#p2{
+    background-color: darkcyan;
+    color: blanchedalmond;
+    border-radius: 50;
+}
+
+.div{
+    background-color: blueviolet;
+    color: azure;
+    border: 30%;
+}

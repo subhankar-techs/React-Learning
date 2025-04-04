@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Array Function Concept</title>
+</head>
+<body>
+    <script>
+        var arr = [1, 2, 3, "Hello", "Welcome", true];
+        document.write(arr.length + "<br>");
+
+        let r1=arr.toString();
+        document.write(r1 + "<br>" + r1.length +"<br>");
+        let r2=arr.join(" ");
+        document.write(r2 + "<br>" + r2.length +"<br>");
+        document.write(arr.slice(2, 5) + "<br>");
+        document.write(arr.slice(2) + "<br>");
+        document.write(arr.slice(-3) + "<br>");
+        document.write(arr.indexOf("Welcome") + "<br>");
+        document.write(arr.lastIndexOf("Bye") + "<br>");
+        document.write(arr.indexOf("Hello", 1) + "<br>");
+        document.write(arr.includes("Welcome") + "<br>");
+        document.write(arr.includes("Bye") + "<br>");
+        arr.push("Bye", "Thanks", "Goodbye");
+        document.write(arr + "<br>");
+        arr.pop();
+        document.write(arr + "<br>");
+        document.write(arr.shift() + "<br>");
+        document.write(arr + "<br>");
+        document.write(arr.unshift("Hello") + "<br>");
+        document.write(arr + "<br>");
+
+        var arr1 = ["java", "python", "c++", "javascript"];
+
+        document.write(arr1 + "<br>");
+        document.write(arr1.reverse() + "<br>");
+        document.write(arr1.shift() + "<br>");
+        document.write(arr1 + "<br>");
+        arr1.unshift("c");
+        document.write(arr1 + "<br>");
+
+
+        var a1=[1,2,3];
+        var a2=[4,5,6];
+        var a3=[7,8,9];
+        var a4=a1.concat(a2,a3);
+        document.write(a4 + "<br>");
+        document.write(arr1.splice(2, 2, "php", "ruby") + "<br>");
+        document.write(arr1 + "<br>");
+        document.write(arr1.splice(2, 0, "php", "ruby") + "<br>");
+        document.write(arr1 + "<br>");
+        document.write(arr1.splice(3,2) + "<br>");
+        document.write(arr1 + "<br>");
+        document.write(arr1.splice(3, 0, "python", "java") + "<br>");
+        document.write(arr1 + "<br>");
+    </script>
+</body>
+</html>

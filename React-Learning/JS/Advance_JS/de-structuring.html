@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-Structuring Concept</title>
+</head>
+<body>
+    <script>
+        // destructuring is a syntax that allows you to unpack values from arrays or properties from objects into distinct variables. 
+        // It is a convenient way to extract values from arrays or properties from objects and assign them to variables in a more concise manner.
+
+        var test = {
+            id : 1,
+            name : 'subhankar',
+            lang : ['Hindi', 'English', 'Bengali'],
+            skills: ['javascript', 'java', 'python'],
+            address: {
+                city: 'kolkata',
+                state: 'WB',
+                country: 'India'
+            }
+        }
+
+        // const { id, name, lang, skills, address } = test;
+        // console.log(id); // 1
+        // console.log(name); // subhankar
+        // console.log(lang); // ['Hindi', 'English', 'Bengali']
+        // console.log(skills); // ['javascript', 'java', 'python']
+        // console.log(address); // { city: 'kolkata', state: 'WB', country: 'India' }
+
+        // or other approch
+
+        const {id, name, ...demo} = test;
+
+        console.log(id); // 1
+        console.log(name); // subhankar
+        console.log(demo); // { lang: [ 'Hindi', 'English', 'Bengali' ], skills: [ 'javascript', 'java', 'python' ], address: { city: 'kolkata', state: 'WB', country: 'India' } }
+    </script>
+</body>
+</html>

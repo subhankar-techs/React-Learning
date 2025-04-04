@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeyup, onkeydown, onkeypress Event</title>
+</head>
+<body>
+    <script>
+        function up(){
+            let name = document.getElementById("name").value;
+            document.getElementById("h3").innerText = name.toUpperCase();
+        }
+        function down(){
+            let name = document.getElementById("name").value;
+            document.getElementById("h3").innerText = "You are typing...";
+        }
+
+        var c=0;
+        function press(){
+            document.getElementById("sp1").innerText=`Key pressed ${++c} times.`;
+        }
+    </script>
+
+    <label for="name">Enter Name</label>
+    <input type="text" name="" id="name" onkeyup="up()" onkeydown="down()" onkeypress="press()"><br>
+    <h3 id="h3"></h3>
+
+    <span id="sp1" style="color: blue;"></span>
+</body>
+</html>

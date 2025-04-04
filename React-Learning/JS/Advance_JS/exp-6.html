@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of Concept</title>
+</head>
+<body>
+    <script>
+        var st="I like to read english. I know English well."
+        document.write(st.length+"<br>");
+        document.write(st.substring(0,14)+"<br>");
+        document.write(st.slice(24,38)+"<br>");
+        document.write(st.slice(0,55)+"<br>");
+        document.write(st.substr(0,14)+"<br>");
+        document.write(st.indexOf("English")+"<br>");
+        document.write(st.lastIndexOf("English")+"<br>");
+        document.write(st.search("English")+"<br>");
+        document.write(st.replace("English","Hindi")+"<br>");
+
+
+        var st1="I like to read english. I know english well."
+        document.write(st1.length+"<br>");
+        document.write(st1+"<br>");
+        document.write(st1.replace(/english/g,"Hindi")+"<br>");
+        document.write(st1.replace(/english/gi,"Bengali")+"<br>");
+
+        var st2="Welcome to Techs World...."+"<br>";
+        document.write(st2.repeat(3)+"<br>");
+
+        var st3="      I like to read english. I know english well.     ";
+        document.write(st3.length+"<br>");
+
+        var st4=st3.trim();
+        document.write(st4.length+"<br>");
+        var st5=st3.trimLeft();
+        document.write(st5.length+"<br>");
+        var st6=st3.trimRight();
+        document.write(st6.length+"<br>");
+
+        var st7="Subhankar"
+        document.write(st7.toUpperCase()+"<br>");
+        document.write(st7.toLowerCase()+"<br>");
+        document.write(st7.toLocaleUpperCase()+"<br>");
+        document.write(st7.charAt(0)+"<br>");
+        document.write(st7[7]+"<br>");
+
+        var st8="I like to play indoor games like BGMI and PUBG";
+        document.write(st8.startsWith("I")+"<br>");
+        document.write(st8.startsWith("BGMI")+"<br>");
+        document.write(st8.endsWith("PUBG")+"<br>");
+        document.write(st8.endsWith("BGMI")+"<br>");
+
+        var st9="I like to play the indoor games like BGMI and PUBG and I like to watch cinema in the evenings on theatres";
+        document.write(st9.split("the")+"<br>"); //remove all the "the"
+        document.write(st9.split(" the "));
+
+    </script>
+</body>
+</html>

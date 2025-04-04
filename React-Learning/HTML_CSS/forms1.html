@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Details Form</title>
+    <link rel="stylesheet" href="forms1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Basic Details</h2>
+        </div>
+        <form> 
+            <div class="field">
+                <label for="firstName" >First Name*</label><br>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="field">
+                <label for="lastName">Last Name*</label><br>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+            </div>
+            <div class="field">
+                <label>Marital Status</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="maritalStatus" value="married" required> Married</label>
+                    <label><input type="radio" name="maritalStatus" value="unmarried" required> Un-Married</label>
+                </div>
+            </div>
+            <div class="field">
+                <label for="highestQualification">Highest Qualification</label>
+                <select id="highestQualification" name="highestQualification">
+                    <option value="select">Select</option>
+                    <option value="bachelor">Bachelor</option>
+                    <option value="master">Master</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="contactNumber">Contact Number*</label><br>
+                <input type="number" id="contactNumber" name="contactNumber" placeholder="Enter Contact Number" required>
+            </div>
+            <div class="field">
+                <label for="emailId">Email ID*</label><br>
+                <input type="email" id="emailId" name="emailId" placeholder="Enter Email ID" required>
+            </div>
+            <div class="field">
+                <label for="dob">DOB</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="field">
+                <label>Hobbies</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+                    <label><input type="checkbox" name="hobbies[]" value="music"> Music</label>
+                    <label><input type="checkbox" name="hobbies[]" value="movie"> Movie</label>
+                    <label><input type="checkbox" name="hobbies[]" value="reading"> Reading</label>
+                    <label><input type="checkbox" name="hobbies[]" value="writing"> Writing</label>
+                </div>
+            </div>
+            <div class="field">
+                <label for="description">Description</label><br>
+                <textarea id="description" name="description" placeholder="Write Something..." rows="4"></textarea>
+            </div>
+            <div class="field">
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address" placeholder="Enter Address">
+            </div>
+            <div class="field">
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="city" placeholder="Enter City">
+            </div>
+            <div class="field">
+                <label for="country">Country</label><br>
+                <input type="text" id="country" name="country" placeholder="Enter Country">
+            </div>
+            <div class="field">
+                <label for="pincode">Pincode</label><br>
+                <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode">
+            </div><br>
+            <div class="btn-group">
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR...IN Loop Concept</title>
+</head>
+<body>
+
+    <div id="d1"></div>
+
+    <script>
+        var test={
+            name:"John",
+            age:25,
+            location:"New York",
+            skills:{
+                html:true,
+                css:true,
+                js:true
+            },
+            college: {
+                name:"ABC College",
+                location:"New York",
+                code: 51
+            },
+        }
+        for(let i in test){
+            if(i!="college"){
+                console.log(i, "-------->", test[i]);  // prints the keys of the object
+            }
+            else{
+                for(let j in test[i]){
+                    console.log(j, "-------->", test.college[j]);  // prints the keys of the object
+                }
+            }
+        }
+    </script>
+</body>
+</html>

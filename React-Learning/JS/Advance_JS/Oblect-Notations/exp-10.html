@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest aurants</title>
+</head>
+<body>
+
+    <script>
+
+        //max words in a string using rest operator
+        var check = (...args) => {
+            if (args.length == 0) {
+                alert("No arguments passed");
+            } 
+            
+            else {
+                var arr = args[0].split(" ");
+                var maxLengthWord = arr.reduce((max, word) => word.length > max.length ? word : max, "");
+                alert("Maximum length word: " + maxLengthWord);
+            }
+        }
+
+        check("Subhankar manna", "love to play BGMI" );
+    </script>
+</body>
+</html>

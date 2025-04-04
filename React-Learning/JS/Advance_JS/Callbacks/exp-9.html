@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["i","like","to","play","cricket"];
+        var res1=arr.reduce((accu,val,index)=>{
+            console.log("accu :",accu);
+            accu=accu+ " "+val+ " ";
+            return accu;  
+        }, " ");
+        document.write(`<h3>Requied Sentence: ${res1}</h3>`);
+
+        var res2=arr.reduceRight((accu,val,index)=>{
+            console.log("accu :",accu);
+            accu=accu+ " "+val+ " ";
+            return accu;   
+        }, " ");
+        document.write(`<h3>Requied Sentence: ${res2}</h3>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter, Find, Find-Index Concept</title>
+</head>
+<body>
+    <div id="d3"></div>
+
+    <script>
+        var city=["Delhi","Mumbai","Chennai","Kolkata","Hyderabad"];
+        var res=city.filter((val,index)=>{
+            if(val.length>6){
+                return true;
+            }
+        });
+        console.log(res);
+
+        var res=city.find((val,index)=>{
+            if(val.length>4){
+                return true;
+            }
+        });
+        console.log(res);
+
+        var res=city.findIndex((val,index)=>{
+            if(val.length>5){
+                return true;
+            }
+        });
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks Concept</title>
+</head>
+<body>
+    <!-- reverse string using map() -->
+    <div id="d2"></div>
+
+    <script>
+        var lang=["HTML","CSS","JS","React","Node","MongoDB"];
+        var revLang = lang.map(function(x) {
+            return x.split("").reverse().join("");
+        });
+        document.getElementById("d2").innerHTML=revLang.join(" ");
+    </script>
+</body>
+</html>

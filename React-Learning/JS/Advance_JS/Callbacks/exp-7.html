@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[10,12,24,36,48,60,72,84,96,108];
+        var res1=arr.every((val, index)=>{
+            if(val%2==0){
+                return true;
+            }
+        })
+        console.log(res1);
+
+        var res2=arr.some((val, index)=>{
+            if(val%2==0){
+                return true;
+            }
+        })
+        console.log(res2);
+    </script>
+</body>
+</html>

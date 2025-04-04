@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" id="name" placeholder="Enter Name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" placeholder="Enter Email" required><br><br>
+
+    <label for="location">Location:</label><br>
+    <input type="text" name="location" id="location" placeholder="Enter Location" required><br><br>
+
+    <button type="button" onclick="addUser()">Add User</button><br><br>
+
+    <div id="d1"></div>
+
+    <script>
+        var users = [];
+
+        function addUser() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var location = document.getElementById('location').value;
+
+            users.push({name: name, email: email, location: location});
+            displayUsers();
+        }
+
+        function displayUsers() {
+            var res = `<table border="1">` + '<tr><th>Name</th><th>Email</th><th>Location</th></tr>';
+            users.forEach(function(user) {
+            res += '<tr><td>' + user.name + '</td><td>' + user.email + '</td><td>' + user.location + '</td></tr>';
+            });
+            res += '</table>';
+            document.getElementById('d1').innerHTML = res;
+        }
+    </script>
+</body>
+</html>

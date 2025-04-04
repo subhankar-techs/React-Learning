@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Concept</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var city=["Delhi","Mumbai","Chennai","Kolkata","Hyderabad"];
+        var res="<select multiple>";
+            city.forEach((val,index)=>{
+                res=res+`<option value= ${index+1} >${val}</option>`
+            });
+            res=res+"</select>";
+            document.getElementById("d1").innerHTML=res;
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var test={
+            uid:20,
+            name:"SUBHANKAR",
+            age:23,
+            city:"Panskura",
+            skills:["HTML","CSS","JS"]
+        }
+        console.log(test);
+        document.write(`<h3>${test.uid}</h3> <h3>${test.name}</h3> <h3>${test.age}</h3> <h3>${test.city}</h3> <h3>${test.skills}</h3>`);
+
+        //approch 1
+        test.email="subhankar.techs@gmail.com";
+
+        //approch 2
+        test["phone"]="9876543210";
+
+        console.log(test);
+    </script>
+</body>
+</html>

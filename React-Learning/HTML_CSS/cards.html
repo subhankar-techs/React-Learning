@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Cards Using BS</title>
+
+    <style>
+        #d1{
+            width: 200px;
+            border: 2px solid green;
+            margin: 10px;
+            height: 200px;
+            transition: all 50ms ease-in-out;
+        }
+
+        #d1:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="display: flex;">
+        <div class="card" id="d1">
+            <img src="https://cdn.wallpapersafari.com/28/20/tOndu2.jpg" alt="card image" class="card-img-top rounded img-fluid" height="30%" width="50%">
+            <div class="card-body">
+                <h4 class="card-title">Jhon Doe</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="btn btn-outline-primary">See Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

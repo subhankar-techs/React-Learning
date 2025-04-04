@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <label for="name">Search Crickter's Name:</label>
+    <input type="text" id="name" placeholder="Enter name">
+    <button id="search"  onclick="searchPlayer()">Search</button>
+    <h3 id="result"></h3>
+
+    <script>
+
+        function searchPlayer(){
+            var name= document.getElementById("name").value;
+            var result= document.getElementById("result");
+            var players = ["sachin","sourav","rahul","dhoni","yuvraj","rohit","virat"];
+            var matchedPlayers = [];
+            for (var i = 0; i < players.length; i++) {
+                if (players[i].toLowerCase().startsWith(name.toLowerCase())) {
+                    matchedPlayers.push(players[i]);
+                }
+            }
+            if (matchedPlayers.length > 0) {
+                result.innerHTML = matchedPlayers.join(", ");
+            } else {
+                result.innerHTML = "No match found";
+            }
+
+        }
+    </script>
+</body>
+</html>

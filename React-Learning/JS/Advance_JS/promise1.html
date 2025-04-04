@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Concept</title>
+</head>
+<body>
+    <script>
+        // A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+        // A promise is in one of three states: pending, fulfilled, or rejected.
+        // A promise is a placeholder for a value that will be available in the future.
+        // A promise is a way to handle asynchronous operations in JavaScript.
+
+        var pr = new Promise((resolve, reject) => {
+            let n= window.prompt("Enter a Word");
+            if(n.length>0){
+                resolve("You have entered a non-empty string");
+            }
+            else{
+                reject("You have entered an empty string");
+            }
+        })
+
+        pr.then((msg) => {
+            document.write(msg);
+        })
+        .catch((err) => {
+            console.error(err);
+        })
+        .finally(() => {
+            alert("This is final output");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        // Spread Operator Concept
+        // Spread operator is used to expand an iterable (like an array) into its individual elements.
+        // It is denoted by three dots (...).
+        // It is used to combine arrays, copy arrays, and pass multiple arguments to a function.
+
+        var arr = [10, 20, "welcome", "admin", true];
+
+        var dup = [...arr]; // Spread operator is used to copy the array
+        arr.push("have a nice day"); // Original array is modified
+        console.log(dup); // [10, 20, "welcome", "admin", true]
+        console.log(arr); // [10, 20, "welcome", "admin", true, "have a nice day"] 
+
+        arr1 = [12, 25, 30];
+        arr2 = [40, 50, 60]; // Spread operator is used to combine arrays
+        var result = [...arr,...arr1, ...arr2]; // Spread operator is used to combine arrays
+        console.log(result); // [10, 20, "welcome", "admin", true, "have a nice day", 12, 25, 30, 40, 50, 60]
+
+    </script>
+</body>
+</html>

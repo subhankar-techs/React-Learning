@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+</head>
+<body>
+    <script>
+        const findfact=()=>{
+            let fact=1;1
+            let num=document.getElementById("num").value;
+            for(let i=1;i<=num;i++){
+                fact=fact*i;
+            }
+            document.getElementById("h3").innerText=`Factorial of ${num} is ${fact}`;
+        }
+    </script>
+    Enter Number:
+    <input type="number" id="num" />
+    <br />
+    <br />
+    <button onclick="findfact()">Result</button>
+    <br><br>
+    <h3 id="h3"></h3>
+</body>
+</html>

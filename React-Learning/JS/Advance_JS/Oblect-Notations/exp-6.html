@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var arr=[
+            {sid: 1, smane: "Subhankar", skills: ["HTML", "CSS", "JS", "React", "Node"]},
+            {sid: 2, smane: "Souvik", skills: ["HTML", "CSS", "JS", "React", "Node"]},
+            {sid: 3, smane: "Sourav", skills: ["HTML", "CSS", "JS", "React", "Node"]},
+        ]
+
+        var res="<ul>";
+            arr.forEach((val,index)=>{
+            res+=`<li>ID: ${val.sid} Name: ${val.smane} Skills: <ol>`;
+            val.skills.forEach(skill => {
+                res += `<li>${skill}</li>`;
+            });
+            res += `</ol></li>`;
+            });
+            res=res+"</ul>";
+            document.getElementById("d1").innerHTML=res;
+    </script>
+</body>
+</html>

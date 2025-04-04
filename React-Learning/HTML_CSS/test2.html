@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Of HTMl & CSS</title>
+
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .login {
+            background-color: aqua;
+            padding: 50px;
+            border-radius: 15px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .login h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 107%;
+            padding: 10px;
+            background-color: white;
+            color: #1a2cef;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #08efef;
+        }
+
+        .input-box:hover{
+            background-color: #6671f3;
+            color: black;
+            transition: 0.3s;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Welcome</h2>
+        <input type="text" class="input-box" placeholder="Username" required >
+        <input type="password" class="input-box" placeholder="Password" required>
+        <button class="login-btn">Login</button>
+    </div>
+</body>
+</html>

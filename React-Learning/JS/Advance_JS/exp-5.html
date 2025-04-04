@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Concept in JS</title>
+</head>
+<body>
+    <script>
+        class Result{
+            constructor(principle, time, rate){
+                this.principle = principle;
+                this.time = time;
+                this.rate = rate;
+            }
+
+            findSi = () => {
+                let si = (this.principle * this.time * this.rate) / 100;
+                return si;
+            }
+
+            findAmount = () => {
+                let amount = this.principle + this.findSi();
+                return amount;
+            }
+        }
+
+        let obj = new Result(1000, 2, 5);
+        document.write(`Simple Interest: ${obj.findSi()}, Amount: ${obj.findAmount()}`);
+    </script>
+</body>
+</html>
