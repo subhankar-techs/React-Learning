@@ -16,6 +16,15 @@ class Ex3 extends Component {
         dept: "CSE"
     }
 
+    update=()=>{
+        this.setState({
+            name: "Sourav",
+            age: 24,
+            location: "Kolkata",
+            dept: "CSE"
+        })
+    }
+
     render() {
         return (
             <>
@@ -25,6 +34,9 @@ class Ex3 extends Component {
                     <li>Location: {this.state.location}</li>
                     <li>Department: {this.state.dept}</li>
                 </ul>
+
+                <br /><br />
+                <button onClick={this.update}>Update</button>
             </>
             
         )
