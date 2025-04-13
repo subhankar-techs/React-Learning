@@ -8,7 +8,14 @@
 // import Test3 from "./Components/test3"
 // import Test4 from "./Components/test4"
 
-import Test5 from "./Components/test5"
+// import Test5 from "./Components/test5"
+
+// import Dimensic from "./Components/Dimension"
+
+// import Student from "./Components/student"
+
+import List from "./Components/list"
+
 
 function App() {
 
@@ -34,7 +41,13 @@ function App() {
 
       {/* <Test3 /> */}
       {/* <Test4 /> */}
-      <Test5 />
+      {/* <Test5 /> */}
+
+      {/* <Dimensic /> */}
+
+      {/* <Student /> */}
+
+      <List/>
     </>
 
   )
