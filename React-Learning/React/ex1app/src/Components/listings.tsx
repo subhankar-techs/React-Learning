@@ -13,9 +13,9 @@ export default class Listings extends Component<Listing>{
     render(){
         return(
             <>
-                <ol>
+                
                     <li>{this.props.name}</li>
-                </ol>
+                
             </>
         )
     }

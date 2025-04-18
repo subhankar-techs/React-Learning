@@ -19,9 +19,15 @@ export default class List extends Component{
                 <input type="text" id="name" name="msg" value={this.state.msg} onChange={this.update} /><br/><br/>
 
                 <button type="button" onClick={this.add}>Add</button>
+
+                <ol>
                 {
                     this.state.name.map((item,index)=><Listings key={index} name={item} />)
                 }
+
+                </ol>
+
+
             </>
         )
     }
