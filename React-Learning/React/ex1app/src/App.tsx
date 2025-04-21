@@ -18,7 +18,9 @@
 
 // import Listname from "./Components/listname"
 
-import Biodata from "./Components/biodata"
+// import Biodata from "./Components/biodata"
+
+import Prac1 from "./Components/Practice/prac1"
 
 
 function App() {
@@ -55,7 +57,9 @@ function App() {
 
       {/* <Listname /> */}
 
-      <Biodata />
+      {/* <Biodata /> */}
+
+      <Prac1 />
 
 
     </>
