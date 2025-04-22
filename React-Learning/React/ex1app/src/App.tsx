@@ -20,7 +20,15 @@
 
 // import Biodata from "./Components/biodata"
 
-import Prac1 from "./Components/Practice/prac1"
+// import Prac1 from "./Components/Practice/prac1"
+
+// import Lifecycle1 from "./Components/lifecycle1"
+
+// import Lifecycle2 from "./Components/lifecycle2"
+
+// import Lifecycle3 from "./Components/lifecycle3"
+
+import Scoreboard from "./Components/scoreboard"
 
 
 function App() {
@@ -59,11 +67,14 @@ function App() {
 
       {/* <Biodata /> */}
 
-      <Prac1 />
+      {/* <Prac1 /> */}
 
+      {/* <Lifecycle1 /> */}
+      {/* <Lifecycle2 /> */}
+      {/* <Lifecycle3 /> */}
+      <Scoreboard />
 
     </>
-
   )
 }
 

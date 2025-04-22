@@ -8,7 +8,7 @@ export default class Prac1 extends Component {
         return (
             <>
                 <label htmlFor="name">Enter Name:</label>
-                <input type="text" id="name" name="name" onChange={} /><br /><br />
+                <input type="text" id="name" name="name"  /><br /><br />
 
                 <label htmlFor=""></label>
             </>
