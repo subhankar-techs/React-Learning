@@ -28,7 +28,9 @@
 
 // import Lifecycle3 from "./Components/lifecycle3"
 
-import Scoreboard from "./Components/scoreboard"
+// import Scoreboard from "./Components/scoreboard"
+
+import Loader from "./Components/loader"
 
 
 function App() {
@@ -72,7 +74,8 @@ function App() {
       {/* <Lifecycle1 /> */}
       {/* <Lifecycle2 /> */}
       {/* <Lifecycle3 /> */}
-      <Scoreboard />
+      {/* <Scoreboard /> */}
+      <Loader />
 
     </>
   )

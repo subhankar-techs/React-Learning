@@ -16,6 +16,16 @@ export default class Lifecycle3 extends Component {
         }, 1);
     }
 
+    componentWillMount(): void {
+        console.log("componentWillMount is Loading...")
+    }
+
+    componentWillUnmount(): void {
+        console.log("componentWillUnmount is Loading...")
+    }
+    
+    
+
     render() {
         return (
             <>
