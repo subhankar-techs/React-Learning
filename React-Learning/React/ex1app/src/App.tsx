@@ -5,6 +5,7 @@
 // import Test2 from "./Components/test2"
 // import UserInputEx from "./Components/userInputEx"
 
+
 // import Test3 from "./Components/test3"
 // import Test4 from "./Components/test4"
 
@@ -30,7 +31,16 @@
 
 // import Scoreboard from "./Components/scoreboard"
 
-import Loader from "./Components/loader"
+// import Loader from "./Components/loader"
+
+// import Hookex1 from "./Hooks/Hookex1"
+// import Hookex2 from "./Hooks/Hookex2"
+// import Hookex3 from "./Hooks/Hookex3"
+// import Hookex4 from "./Hooks/Hookex4"
+// import Hookex5 from "./Hooks/Hookex5"
+import Exam1 from "./Components/exam1"
+// import Exam2 from "./Components/exam2"
+// import Items from "./Components/exam3/item"
 
 
 function App() {
@@ -75,7 +85,18 @@ function App() {
       {/* <Lifecycle2 /> */}
       {/* <Lifecycle3 /> */}
       {/* <Scoreboard /> */}
-      <Loader />
+      {/* <Loader /> */}
+
+      {/* <Hookex1 /> */}
+      {/* <Hookex2 /> */}
+      {/* <Hookex3 /> */}
+      {/* <Hookex4 /> */}
+      {/* <Hookex5 /> */}
+
+      <Exam1 />
+      {/* <Exam2 /> */}
+
+      {/* <Items /> */}
 
     </>
   )
