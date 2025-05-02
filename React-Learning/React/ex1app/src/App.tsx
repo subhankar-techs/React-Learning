@@ -38,9 +38,12 @@
 // import Hookex3 from "./Hooks/Hookex3"
 // import Hookex4 from "./Hooks/Hookex4"
 // import Hookex5 from "./Hooks/Hookex5"
-import Exam1 from "./Components/exam1"
+// import Exam1 from "./Components/exam1"
 // import Exam2 from "./Components/exam2"
 // import Items from "./Components/exam3/item"
+import Hookex6 from "./Hooks/Hookex6"
+import Hookex8 from "./Hooks/Hookex8"
+import Hookex9 from "./Hooks/Hookex9"
 
 
 function App() {
@@ -93,10 +96,14 @@ function App() {
       {/* <Hookex4 /> */}
       {/* <Hookex5 /> */}
 
-      <Exam1 />
+      {/* <Exam1 /> */}
       {/* <Exam2 /> */}
 
       {/* <Items /> */}
+
+      {/* <Hookex6 /> */}
+      {/* <Hookex8 /> */}
+      <Hookex9 />
 
     </>
   )
