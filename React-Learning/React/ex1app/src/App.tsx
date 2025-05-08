@@ -44,6 +44,9 @@
 import Hookex6 from "./Hooks/Hookex6"
 import Hookex8 from "./Hooks/Hookex8"
 import Hookex9 from "./Hooks/Hookex9"
+import Memoex from "./Hooks/Memowx"
+import Parent from "./Hooks/ContextEx1/parent"
+import Score from "./Hooks/ContextEx2/Score"
 
 
 function App() {
@@ -103,7 +106,10 @@ function App() {
 
       {/* <Hookex6 /> */}
       {/* <Hookex8 /> */}
-      <Hookex9 />
+      {/* <Hookex9 /> */}
+      {/* <Memoex /> */}
+      {/* <Parent /> */}
+      <Score />
 
     </>
   )
