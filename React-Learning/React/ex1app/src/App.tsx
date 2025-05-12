@@ -41,12 +41,14 @@
 // import Exam1 from "./Components/exam1"
 // import Exam2 from "./Components/exam2"
 // import Items from "./Components/exam3/item"
-import Hookex6 from "./Hooks/Hookex6"
-import Hookex8 from "./Hooks/Hookex8"
-import Hookex9 from "./Hooks/Hookex9"
-import Memoex from "./Hooks/Memowx"
-import Parent from "./Hooks/ContextEx1/parent"
-import Score from "./Hooks/ContextEx2/Score"
+// import Hookex6 from "./Hooks/Hookex6"
+// import Hookex8 from "./Hooks/Hookex8"
+// import Hookex9 from "./Hooks/Hookex9"
+// import Memoex from "./Hooks/Memowx"
+// import Parent from "./Hooks/ContextEx1/parent"
+// import Score from "./Hooks/ContextEx2/Score"
+// import Parent from "./Hooks/UseCallbackEx/Parent"
+import Menu from "./RouterEx/Menu"
 
 
 function App() {
@@ -109,7 +111,9 @@ function App() {
       {/* <Hookex9 /> */}
       {/* <Memoex /> */}
       {/* <Parent /> */}
-      <Score />
+      {/* <Score /> */}
+      {/* <Parent /> */}
+      <Menu />
 
     </>
   )
