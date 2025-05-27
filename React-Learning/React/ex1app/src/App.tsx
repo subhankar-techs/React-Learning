@@ -4,35 +4,19 @@
 //import Test1 from "./Components/test1"
 // import Test2 from "./Components/test2"
 // import UserInputEx from "./Components/userInputEx"
-
-
 // import Test3 from "./Components/test3"
 // import Test4 from "./Components/test4"
-
 // import Test5 from "./Components/test5"
-
 // import Dimensic from "./Components/Dimension"
-
 // import Student from "./Components/student"
-
 // import List from "./Components/list"
-
 // import Listname from "./Components/listname"
-
 // import Biodata from "./Components/biodata"
-
 // import Prac1 from "./Components/Practice/prac1"
-
 // import Lifecycle1 from "./Components/lifecycle1"
-
 // import Lifecycle2 from "./Components/lifecycle2"
-
-// import Lifecycle3 from "./Components/lifecycle3"
-
 // import Scoreboard from "./Components/scoreboard"
-
 // import Loader from "./Components/loader"
-
 // import Hookex1 from "./Hooks/Hookex1"
 // import Hookex2 from "./Hooks/Hookex2"
 // import Hookex3 from "./Hooks/Hookex3"
@@ -48,7 +32,14 @@
 // import Parent from "./Hooks/ContextEx1/parent"
 // import Score from "./Hooks/ContextEx2/Score"
 // import Parent from "./Hooks/UseCallbackEx/Parent"
-import Menu from "./RouterEx/Menu"
+import Rules from "./RouterEx/Rules"
+import Rules1 from "./RouterEx2/Rules1"
+import Rules2 from "./PrivateRoute/Rules2"
+import ApiEx1 from "./ApiEx/Apiex1"
+import ApiEx2 from "./ApiEx/apiex2"
+import ApiEx3 from "./ApiEx/Apiex3"
+import Apiex4 from "./ApiEx/Apiex4"
+import Apiex5 from "./ApiEx/Apiex5"
 
 
 function App() {
@@ -68,44 +59,30 @@ function App() {
       {/* <Ex2 /> */}
       {/* <Ex3 /> */}
       {/* <Test1 /> */}
-
-        {/* <Test2 /> */}
-
+      {/* <Test2 /> */}
       {/* <UserInputEx /> */}
-
       {/* <Test3 /> */}
       {/* <Test4 /> */}
       {/* <Test5 /> */}
-
       {/* <Dimensic /> */}
-
       {/* <Student /> */}
-
       {/* <List/> */}
-
       {/* <Listname /> */}
-
       {/* <Biodata /> */}
-
       {/* <Prac1 /> */}
-
       {/* <Lifecycle1 /> */}
       {/* <Lifecycle2 /> */}
       {/* <Lifecycle3 /> */}
       {/* <Scoreboard /> */}
       {/* <Loader /> */}
-
       {/* <Hookex1 /> */}
       {/* <Hookex2 /> */}
       {/* <Hookex3 /> */}
       {/* <Hookex4 /> */}
       {/* <Hookex5 /> */}
-
       {/* <Exam1 /> */}
       {/* <Exam2 /> */}
-
       {/* <Items /> */}
-
       {/* <Hookex6 /> */}
       {/* <Hookex8 /> */}
       {/* <Hookex9 /> */}
@@ -113,8 +90,14 @@ function App() {
       {/* <Parent /> */}
       {/* <Score /> */}
       {/* <Parent /> */}
-      <Menu />
-
+      {/* <Rules /> */}
+      {/* <Rules1 />  */}
+      {/* <Rules2 /> */}
+      {/* <ApiEx1 /> */}
+      {/* <ApiEx2 /> */}
+      {/* <ApiEx3 /> */}
+      {/* <Apiex4 /> */}
+      <Apiex5 />
     </>
   )
 }
