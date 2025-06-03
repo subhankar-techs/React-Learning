@@ -32,15 +32,22 @@
 // import Parent from "./Hooks/ContextEx1/parent"
 // import Score from "./Hooks/ContextEx2/Score"
 // import Parent from "./Hooks/UseCallbackEx/Parent"
-import Rules from "./RouterEx/Rules"
-import Rules1 from "./RouterEx2/Rules1"
-import Rules2 from "./PrivateRoute/Rules2"
-import ApiEx1 from "./ApiEx/Apiex1"
-import ApiEx2 from "./ApiEx/apiex2"
-import ApiEx3 from "./ApiEx/Apiex3"
-import Apiex4 from "./ApiEx/Apiex4"
-import Apiex5 from "./ApiEx/Apiex5"
-
+// import Rules from "./RouterEx/Rules"
+// import Rules1 from "./RouterEx2/Rules1"
+// import Rules2 from "./PrivateRoute/Rules2"
+// import ApiEx1 from "./ApiEx/Apiex1"
+// import ApiEx2 from "./ApiEx/apiex2"
+// import ApiEx3 from "./ApiEx/Apiex3"
+// import Apiex4 from "./ApiEx/Apiex4"
+// import Apiex5 from "./ApiEx/Apiex5"
+// import Apiex6 from "./ApiEx/Apiex6"
+// import Apipost from "./ApiEx/Apipost"
+// import ApiPagination from "./ApiEx/ApiPagination"
+// import Apiex7 from "./ApiEx/Apiex7"
+// import Apiex8 from "./ApiEx/Apiex8"
+import Rules from "./Exam/ContextApi/Rules" 
+import Food from "./Exam/Food" 
+import DataTableEx from "./Exam/DataTable"           
 
 function App() {
 
@@ -97,7 +104,15 @@ function App() {
       {/* <ApiEx2 /> */}
       {/* <ApiEx3 /> */}
       {/* <Apiex4 /> */}
-      <Apiex5 />
+      {/* <Apiex5 /> */}
+      {/* <Apiex6 /> */}
+      {/* <Apipost /> */}
+      {/* <ApiPagination /> */}
+      {/* <Apiex7 /> */}
+      {/* <Apiex8 /> */}
+      {/* <Rules /> */}
+      {/* <Food /> */}
+      <DataTableEx />
     </>
   )
 }
